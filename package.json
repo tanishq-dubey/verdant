@@ -1,0 +1,19 @@
+{
+  "name": "verdant",
+  "version": "0.1.0",
+  "description": "A modern Verilog IDE",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Tanishq Dubey",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanishq-dubey/verdant.git"
+  },
+  "devDependencies": {
+    "electron": "^1.8.4"
+  }
+}
