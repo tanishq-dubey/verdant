@@ -3,9 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Verdant</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<h1>Hello World!</h1>
-		Testing an electron build on Electron version <script>document.write(process.versions.electron)</script>.
+		<div id="editor"></div>
+		<script src="libs/ace.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/mode-verilog.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/theme-monokai.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">require('./editor.js')</script>
 	</body>
 </html>
