@@ -5,15 +5,41 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
   },
-  "author": "Tanishq Dubey",
+  "build": {
+    "appId": "com.dubey.verdant",
+    "dmg": {
+      "contents": [
+        {
+	  "x": 110,
+	  "y": 150
+	},
+	{
+	  "x": 240,
+	  "y": 150,
+	  "type": "link",
+	  "path": "/Applications"
+	}
+      ]
+    },
+    "linux": {
+      "target": [
+	"AppImage",
+	"deb"
+      ]
+    }
+  },
+  "author": "Tanishq Dubey <tanishq.dubey@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/tanishq-dubey/verdant.git"
   },
   "devDependencies": {
-    "electron": "^1.8.4"
+    "electron": "^1.8.4",
+    "electron-builder": "^20.5.1"
   }
 }
