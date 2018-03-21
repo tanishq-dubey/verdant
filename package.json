@@ -10,6 +10,7 @@
     "dist": "build"
   },
   "build": {
+    "productName": "Verdant",
     "appId": "com.dubey.verdant",
     "dmg": {
       "contents": [
